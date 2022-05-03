@@ -1,5 +1,6 @@
 name: Build and deploy to GitHub Pages
-
+env:
+  API_KEY: ${{ env.API_KEY }}
 on:
   push:
     branches: [main]
