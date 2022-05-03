@@ -1,5 +1,4 @@
 name: Build and deploy to GitHub Pages
-
 on:
   push:
     branches: [main]
@@ -11,10 +10,15 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
-      - name: Install and Build 🔧
+      - name: create env file
         run: |
           touch .env
           echo API_KEY=${{ secrets.API_KEY }} >> .env
+
+      - name: Install and Build 🔧
+        run: |
+          npm ci
+          npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
