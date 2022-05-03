@@ -97,4 +97,4 @@ var t=arguments[3];function e(t){return(e="function"==typeof Symbol&&"symbol"==t
 },{"../sass/main.scss":"clu1","notiflix/build/notiflix-notify-aio":"MeeU","./apiService":"eQwa","./loadMore":"s6LI","./markupTemplate":"Zfag"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/main");
 },{"./sass/main.scss":"clu1","./js/main":"d6sW"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11/src.fcf9ab1b.js.map
+//# sourceMappingURL=/goit-js-hw-11/src.2ebe8823.js.map
