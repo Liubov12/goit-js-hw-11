@@ -1,0 +1,56 @@
+.load-more {
+    display: block;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  
+    border: none;
+    border-radius: 5px;
+  
+    background-color: rgb(204, 80, 8);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    transition: color 250ms linear, background-color 250ms linear, box-shadow 250ms linear;
+  
+    cursor: pointer;
+  }
+  
+  .load-more:hover {
+    background-color: #efefef;
+    color: #212121;
+  }
+  
+  .load-more:active {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  }
+  
+  .load-more:disabled {
+    opacity: 0.7;
+  }
+  
+  .is-hidden {
+    display: none;
+  }
+  
+  .loader {
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 7px solid cadetblue;
+    border-radius: 50%;
+    border-top-color: rgb(16, 16, 119);
+    animation: 2000ms spin infinite linear;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+      ottom-color: rgb(16, 16, 119);
+    }
+  }
