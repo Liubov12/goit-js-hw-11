@@ -22,7 +22,6 @@ export default class ImagesAPIService {
   set query(newQuery) {
     this.searchQuery = newQuery;
   }
-
   getOptions() {
     const options = new URLSearchParams({
       key: `${API_KEY}`,
